@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-or-dmv",
+  "version": "0.1.0",
+  "description": "Oregon DMV: live field-office wait times and office directory for all 60 offices",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "or-dmv"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-or-dmv"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
