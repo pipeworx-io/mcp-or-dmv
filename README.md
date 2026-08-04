@@ -3,6 +3,8 @@
 Oregon DMV MCP — **live** wait times at all 60 Oregon DMV field offices, plus the office
 locator the same payload carries. Keyless.
 
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
+
 Oregon and North Carolina are the only two US states whose DMV publishes a
 machine-readable live wait feed. Every other state's is captcha-gated, blocked to cloud
 egress, broken, or only inside a phone app.
@@ -85,7 +87,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 1392+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -102,14 +104,14 @@ Or connect to the full Pipeworx gateway for access to all 1392+ data sources:
 Instead of calling tools directly, you can ask questions in plain English:
 
 ```
-ask_pipeworx({ question: "your question about Oregon DMV data" })
+ask_pipeworx({ question: "your question about Or Dmv data" })
 ```
 
 The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
