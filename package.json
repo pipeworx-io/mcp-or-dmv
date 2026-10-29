@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-or-dmv",
-  "version": "0.1.1",
-  "description": "Oregon DMV MCP — live wait times at all 60 Oregon DMV field offices, plus the office",
+  "version": "0.2.0",
+  "description": "Oregon DMV MCP — live wait times at all 60 Oregon DMV field offices, plus the office locator the same payload carries. Keyless.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-or-dmv": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "or-dmv"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-or-dmv.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/or-dmv",
   "pipeworx": {
-    "sourceHash": "v1-f5fcbc769b18948163452ebf755c9d6c07d416ac51f074f727fcb1c29f8da2b7",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "mode": "gateway",
+    "slug": "or-dmv",
+    "gatewaySlug": "or-dmv",
+    "sourceHash": "v1-328924f08882cfb5b6add371ba3467abfac179dd4b174419cad40913424b6fa9",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }

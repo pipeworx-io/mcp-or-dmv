@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/or-dmv",
   "title": "Or Dmv",
-  "description": "Oregon DMV MCP — live wait times at all 60 Oregon DMV field offices, plus the office",
-  "version": "0.1.1",
+  "description": "Oregon DMV MCP — live wait times at all 60 Oregon DMV field offices, plus the office locator the…",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/or-dmv",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-or-dmv",
